@@ -1,0 +1,202 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd; /* Un azul muy claro y suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    max-width: 750px; /* Un poco más ancho */
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #0d47a1; /* Azul marino oscuro */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Tamaño de fuente ligeramente más grande */
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: #1976d2; /* Azul medio */
+    margin-top: 35px;
+    margin-bottom: 18px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #e0e0e0; /* Borde inferior más suave */
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #3f51b5; /* Azul índigo para subsecciones */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.description {
+    font-size: 1.15em;
+    color: #555;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-section, .output-section {
+    margin-bottom: 35px;
+    background-color: #fcfcfc; /* Fondo más sutil */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0; /* Borde más suave */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra interna sutil */
+}
+
+.preference-group {
+    margin-bottom: 30px; /* Espacio entre grupos de preferencia */
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones de radio */
+}
+
+.radio-group label {
+    background-color: #f0f4f8; /* Azul muy claro para los labels */
+    padding: 14px 22px; /* Relleno ligeramente más grande */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #c5daed; /* Borde azul claro */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el radio y el texto */
+    font-size: 1.05em;
+    font-weight: 500;
+}
+
+.radio-group label:hover {
+    background-color: #e6f0f9; /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Pequeño efecto de levantamiento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 20px; /* Tamaño ligeramente más grande */
+    height: 20px;
+    border: 2px solid #42a5f5; /* Azul vibrante para el borde del radio */
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none; /* Elimina el contorno de enfoque predeterminado */
+    transition: all 0.2s ease;
+}
+
+.radio-group input[type="radio"]:checked {
+    background-color: #2196f3; /* Azul profundo cuando está seleccionado */
+    border-color: #2196f3;
+    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.3); /* Resplandor al seleccionar */
+}
+
+.radio-group input[type="radio"]:checked::after {
+    content: '';
+    width: 10px; /* Tamaño del punto central */
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; /* Asegura que el punto sea visible */
+}
+
+button {
+    background-color: #4CAF50; /* Verde más clásico */
+    color: white;
+    padding: 16px 32px; /* Relleno más generoso */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 150, 0, 0.2); /* Sombra de botón más distintiva */
+}
+
+button:hover {
+    background-color: #43a047; /* Verde más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Efecto de levantamiento más pronunciado */
+    box-shadow: 0 8px 20px rgba(0, 150, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.output-section p {
+    font-size: 1.15em;
+    margin-bottom: 12px;
+}
+
+.output-section span {
+    font-weight: bold;
+    color: #1565c0; /* Azul oscuro para los valores de las condiciones */
+}
+
+.recommendation {
+    font-size: 2em; /* Más grande para la recomendación */
+    font-weight: bold;
+    color: #d32f2f; /* Rojo más oscuro y fuerte */
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #ffebee; /* Fondo muy claro para la recomendación */
+    border-radius: 10px;
+    border: 1px solid #ef9a9a; /* Borde rojo suave */
+    box-shadow: 0 2px 8px rgba(211, 47, 47, 0.1); /* Sombra sutil */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .radio-group {
+        flex-direction: column; /* Apila los radios en pantallas pequeñas */
+        align-items: center;
+    }
+    .radio-group label {
+        width: 80%; /* Ocupa más ancho en móvil */
+        max-width: 300px;
+    }
+    button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+    .recommendation {
+        font-size: 1.6em;
+    }
+}
